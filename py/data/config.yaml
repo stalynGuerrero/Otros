@@ -7,7 +7,7 @@ credentials:
     admin:
       email: monica.suarez@idt.gov.co
       name: Mónica Gimena Suarez Forero
-      password: admin
+      password: admin2026
       roles:
       - admin
     monica.suarez:
