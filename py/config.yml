@@ -1,0 +1,92 @@
+cookie:
+  expiry_days: 30.0
+  key: clave_segura
+  name: reemplazos_cookie
+credentials:
+  usernames:
+      admin:
+      email: monica.suarez@idt.gov.co
+      name: Administrador
+      password: $2b$12$s2VSS9VUSN4YyB72vSpzmusvlOGV0mqZrQUvQN3u.Hc7TYUKVeUdq
+      roles:
+      - admin
+    monica.suarez:
+      email: monica.suarez@idt.gov.co
+      name: Monica Gimena Suarez Forero
+      password: $2a$12$L2Gf4Gj0IhAitrL8v2Oau.T4jcJda1FSnTjL2l/uAtlYPLEbO.77.
+      roles:
+      - user
+    katheryn.cabrera:
+      email: katheryn.cabrera@idt.gov.co
+      name: Katheryn Mayerly Cabrera Roa
+      password: $2a$12$VGufvOfKaG2j8vV8qpZdsOVPMIhl//3Lmce6NCYGX7ZbTSiIW.8.C
+      roles:
+      - user
+    diana.ruiz:
+      email: diana.ruiz@idt.gov.co
+      name: Diana Maritza Ruiz
+      password: $2a$12$ctPmkTo3vZt.XpE//4MnU.FHv0Lku0DAxdDcVLHN8NKv2cZOxNqSe
+      roles:
+      - user
+    olga.forero:
+      email: olga.forero@idt.gov.co
+      name: Olga Liliana Forero
+      password: $2a$12$Q6YgI87Wd0LScc/XKRCgsOJE18RxT3s/0/PpNQjDPfL.rZ/Boabou
+      roles:
+      - user
+    andrea.herrera:
+      email: andrea.herrera@idt.gov.co
+      name: Andrea Herrera
+      password: $2a$12$k6HxIIIrFRdkLoLBsU30PeBzPEsUnlLNQZrrkG4tWDTXwmrcRyliG
+      roles:
+      - user
+    diana.suarez:
+      email: diana.suarez@idt.gov.co
+      name: Diana Estefanía Suárez Vargas
+      password: $2a$12$6WtcgUy18Ek2oADDhS2z9.bUterAcCcDvEF9tRdWPXsdczfdOp1Ly
+      roles:
+      - user
+    esteban.cruz:
+      email: esteban.cruz@idt.gov.co
+      name: Esteban Cruz
+      password: $2a$12$Ka9pONzxz5AEXPUp7d.GDOKgEKwwPwYkqlR16U/NJgMg0xlszIbta
+      roles:
+      - user
+    miller.huertas:
+      email: miller.huertas@idt.gov.co
+      name: Angel Huertas
+      password: $2a$12$EpmAHNHMlvwR3.goF5p8NegxTixVCJIPwR4DKFG57eJ10pCLWWJ32
+      roles:
+      - user
+    maida.asis:
+      email: maida.asis@idt.gov.co
+      name: Maida Cecilia Asis
+      password: $2a$12$OcGSVM/Vxm0AE9N6KDNi4ui0hGKkJThnpvYaD.DL.8PzCduEJmRZ6
+      roles:
+      - user
+    alizon.pinilla:
+      email: alizon.pinilla@idt.gov.co
+      name: Alizon Michell Pinilla Pabón
+      password: $2a$12$LBiBVs50HB9dEzXEPlH3LuTF4wxIt8fIj8K1TRhOSKQEFzjawtOMO
+      roles:
+      - user
+    claudia.martinez:
+      email: claudia.martinez@idt.gov.co
+      name: Claudia Paola Rodriguez
+      password: $2a$12$aUQ9Z0peSOL9PJsxpuc7juB9Ly7U5d2LujMSZnxlMVpG.jCKM4pFW
+      roles:
+      - user
+    henry.gomez:
+      email: henry.gomez@idt.gov.co
+      name: Henrry Gomez
+      password: $2a$12$DrRZzF/WMFJYPm3W34kpuuSnFi6pMiVe.cRxuGpBWCGIY67ScQq3u
+      roles:
+      - user
+    karen.barrera:
+      email: karen.barrera@idt.gov.co
+      name: Karen Julieth Barrera
+      password: $2a$12$1Luw0187FLPwkTa.Ig.bCOMoBRtrY2k.A9dU8w1SEz.4vg//7VAjy
+      roles:
+      - user
+preauthorized:
+  emails: []
