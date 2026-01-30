@@ -7,7 +7,7 @@ from db_utils import registrar_cambio
 from datetime import datetime
 
 
-CONFIG_FILE = os.path.join(os.path.dirname(__file__), "config.yaml")
+CONFIG_FILE = os.path.join(os.path.dirname(__file__), "data/config.yaml")
 
 def load_config():
     with open(CONFIG_FILE, "r", encoding="utf-8") as f:

@@ -1,13 +1,20 @@
+from pathlib import Path
 import sqlite3
 import pandas as pd
 from datetime import datetime
 
-DB_FILE = "app_reemplazos/py/log4.db"
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+DATA_DIR.mkdir(exist_ok=True)
+
+DB_FILE = DATA_DIR / "log4.db"
+
 
 def get_conn():
     conn = sqlite3.connect(DB_FILE, check_same_thread=False)
     conn.row_factory = sqlite3.Row
     return conn
+
 
 def init_sqlite_tables():
     with get_conn() as conn:

@@ -1,33 +1,34 @@
 import streamlit as st
-from PIL import Image
-import os
+from pathlib import Path
+
 
 def show_login(authenticator, message_placeholder):
     with st.sidebar:
+
         # === Logo ===
-        logo_path = os.path.join(os.path.dirname(__file__), "assets", "IDT_logo.png")
-        if os.path.exists(logo_path):
-            st.image(logo_path, use_container_width=True)
+        logo_path = Path(__file__).resolve().parent / "assets" / "IDT_logo.png"
+        if logo_path.exists():
+            st.image(str(logo_path), use_container_width=True)
 
         # === Títulos ===
-        st.markdown("# Ingreso al Sistema")
+        st.markdown("# Ingreso al Sistemas")
         st.markdown("## Solo usuarios autorizados")
 
-        # === Formulario de login ===
-        try:
-            authenticator.login(
-                'main',
-                fields={'Form name': 'Acceso',
-                        'Username': 'Usuario',
-                        'Password': 'Contraseña',
-                        'Login': 'Ingresar'},
-                captcha=False
-            )
-        except Exception as e:
-            st.sidebar.error(f"Error en el login: {e}")
+        authenticator.login(
+            location="sidebar",
+            fields={
+                "Form name": "Acceso",
+                "Username": "Usuario",
+                "Password": "Contraseña",
+                "Login": "Ingresar"
+            },
+            captcha=False
+        )
 
-    # === Mensajes de error o advertencia ===
-    if st.session_state.get('authentication_status') is False:
-        message_placeholder.error('Usuario/contraseña incorrectos')
-    elif st.session_state.get('authentication_status') is None:
-        message_placeholder.warning('Ingrese sus credenciales para acceder al sistema')
+    # === Mensajes ===
+    auth_status = st.session_state.get("authentication_status")
+
+    if auth_status is False:
+        message_placeholder.error("Usuario o contraseña incorrectos")
+    elif auth_status is None:
+        message_placeholder.info("Ingrese sus credenciales para acceder al sistema")

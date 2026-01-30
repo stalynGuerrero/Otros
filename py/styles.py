@@ -1,4 +1,10 @@
+from pathlib import Path
 import streamlit as st
+
+BASE_DIR = Path(__file__).resolve().parent
+ASSETS_DIR = BASE_DIR / "assets"
+
+LOGO_PATH = ASSETS_DIR / "IDT_logo.png"
 
 def load_styles():
     """
@@ -58,7 +64,11 @@ def render_sidebar_logo():
     """
     Renderiza el logo y encabezado en el sidebar.
     """
-    st.image("app_reemplazos/py/assets/IDT_logo.png", use_container_width=True)
+    if LOGO_PATH.exists():
+        st.image(str(LOGO_PATH), use_container_width=True)
+    else:
+        st.warning("Logo institucional no encontrado")
+
     st.markdown(
         """
         <div style="text-align:center; margin-top:-10px; margin-bottom:20px;">
@@ -67,4 +77,3 @@ def render_sidebar_logo():
         """,
         unsafe_allow_html=True
     )
-
